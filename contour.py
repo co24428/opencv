@@ -86,7 +86,6 @@ for i in range(len(contours)):
         max = len(contours[i])
         max_iter = i
         
-print(max_iter, max)
 # 원본에 외곽선을 대비
 cv2.drawContours(src, [contours[max_iter]], 0, (0, 0, 255), 1)
 cv2.imshow("src", src)
