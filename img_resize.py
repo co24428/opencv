@@ -2,12 +2,11 @@ import cv2
 
 fname = './image/coffee.png'
 
-
 src = cv2.imread(fname, cv2.IMREAD_COLOR)
 
 # cv2.resize( 원본 이미지, 결과 이미지 크기, interpolation(보간법) )
 # 결과 이미지 크기 : Tuple형
-dst = cv2.resize(src, dsize=(100, 100), interpolation=cv2.INTER_AREA)
+dst = cv2.resize(src, dsize=(640, 480), interpolation=cv2.INTER_AREA)
 # cv2.resize( 원본 이미지, dsize=(0, 0), 가로비, 세로비, interpolation(보간법) )
 # 가로비, 세로비 => n배로 변경
 dst2 = cv2.resize(src, dsize=(0, 0), fx=0.3, fy=0.7, interpolation=cv2.INTER_LINEAR)
