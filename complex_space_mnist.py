@@ -31,8 +31,8 @@ for num in range(0,10):
   # tmp_img_countour = Image.open(f'/content/drive/My Drive/Coffee_Inspection/참고자료/MINIST/output/{num}_contour.png의 사본')
   # tmp_img = Image.open(f'/content/drive/My Drive/Coffee_Inspection/참고자료/MINIST/output/{num}.png의 사본')
 
-  tmp_img_countour = Image.open(f'./mnist/{num}_contour.png의 사본.png')
-  tmp_img = Image.open(f'./mnist/{num}.png의 사본.png')
+  tmp_img_countour = Image.open(f'./mnist_image/{num}_contour.png')
+  tmp_img = Image.open(f'./mnist_image/{num}.png')
   
   tmp_img_countour = 255 - np.array(tmp_img_countour.convert('L'))
   tmp_img = 255 - np.array(tmp_img.convert('L'))
